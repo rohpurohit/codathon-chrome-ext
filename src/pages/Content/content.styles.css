@@ -53,6 +53,8 @@
   border: 1px solid #888;
   width: 50%; /* Could be more or less, depending on screen size */
   height: 65%;
+  width: 600px;
+  height: 550px;
 }
 
 /* The Close Button */
@@ -60,7 +62,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  margin: 0 2em;
+  /* margin: 0 2em; */
+  margin-right: 10px;
   color: #aaa;
   float: right;
   font-size: 28px;
