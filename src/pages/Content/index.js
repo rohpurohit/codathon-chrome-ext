@@ -42,8 +42,8 @@ if (url) {
   closeButton.appendChild(svg);
   closeButton.classList.add('close');
   const iframe = document.createElement('iframe');
-  iframe.width = '582px';
-  iframe.height = '543px';
+  iframe.width = '515px';
+  iframe.height = '530px';
   iframe.src = `https://aikyam-7607.fly.dev/`;
   modalContent.appendChild(closeButton);
   modalContent.appendChild(iframe);
