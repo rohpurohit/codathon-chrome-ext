@@ -40,6 +40,7 @@ if (url) {
   const iframe = document.createElement('iframe');
   iframe.width = '515px';
   iframe.height = '530px';
+  iframe.margin = '2em';
   iframe.src = `https://aikyam-7607.fly.dev/`;
   modalContent.appendChild(closeButton);
   modalContent.appendChild(iframe);
