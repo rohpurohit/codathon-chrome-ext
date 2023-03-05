@@ -1,10 +1,7 @@
-import { printLine } from './modules/print';
-
 const url = window.location.href;
-printLine(url);
 
 if (url) {
-  // const body = document.getElementsByTagName('body');
+  // Build modal
   const modal = document.createElement('div');
   modal.id = 'myModal';
   modal.classList.add('modal');
@@ -12,7 +9,7 @@ if (url) {
   modalContent.classList.add('modal-content');
   const closeButton = document.createElement('span');
 
-  // Adding Svg Element
+  // Adding close icon Svg Element
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svg.setAttribute('width', '24');
   svg.setAttribute('height', '24');
@@ -36,11 +33,10 @@ if (url) {
   svg.appendChild(path1);
   svg.appendChild(path2);
 
-  //
-
-  // closeButton.innerText = `x`;
   closeButton.appendChild(svg);
   closeButton.classList.add('close');
+
+  // Create iframe
   const iframe = document.createElement('iframe');
   iframe.width = '515px';
   iframe.height = '530px';
@@ -49,6 +45,7 @@ if (url) {
   modalContent.appendChild(iframe);
   modal.appendChild(modalContent);
 
+  // Create chat button
   const div = document.createElement('div');
   div.classList.add('button-container');
   const button = document.createElement('div');
@@ -61,14 +58,15 @@ if (url) {
     modal.style.display = 'none';
   };
 
+  // add listeners to chat button
   window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = 'none';
     }
   };
   div.appendChild(button);
+
+  // append to website body
   document.body.appendChild(div);
   document.body.appendChild(modal);
-  // document.body.appendChild(appContainer);
-  printLine(div);
 }

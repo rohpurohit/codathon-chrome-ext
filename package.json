@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lxieyang/chrome-extension-boilerplate-react.git"
+    "url": "https://aikyam-7607.fly.dev/"
   },
   "scripts": {
     "build": "node utils/build.js",
